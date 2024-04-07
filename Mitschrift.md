@@ -24,6 +24,9 @@ Nicht unter Windows
 | ----- | ----- | ----- | ----- | ----- | ----- |
 | 8 | - | - | SE P | SE VL | - |
 | 10 | WS I | Prog2 P | SE P | - | - |
-| 12 | WS I | - | Prog2 VL| - | - |
-| 14 | - | - | - | - | - |
+| 12 | WS I | WS II| Prog2 VL| - | - |
+| 14 | - | WS II | - | - | - |
 | 16 | - | - | - | - | - |
+
+SE Praktikum - Termine: 10.04.2024, 24.04.2024, 15.05.2024, 05.06.2024, 19.06.2024
+Prog 2 Praktikum - Termine: tba
