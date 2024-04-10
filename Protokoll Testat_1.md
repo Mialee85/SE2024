@@ -30,7 +30,7 @@ git clone https://github.com/docker/getting-started.git
 nano Dockerfile_App-starten
 ```
 Inhalt:
-# syntax=docker/dockerfile:1
+    # syntax=docker/dockerfile:1
    
 FROM node:18-alpine
 WORKDIR /app
@@ -89,7 +89,3 @@ docker run -d -p 3000:3000 \
     node:18-alpine \
     sh -c "yarn install && yarn run dev"
 ```
-
-
-
-
