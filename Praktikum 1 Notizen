@@ -1,0 +1,33 @@
+Wenn docker sudo will:s
+Sudo groupadd -f docker
+sudo usermod -aG docker $USER
+newgrp docker
+groups
+
+Dockerfile im /app Ordner
+	FROM node:18-alpine
+	WORKDIR /app
+	COPY . .
+	RUN yarn install --production
+	CMD ["node", "src/index.js"]
+	EXPOSE 3000	
+
+Sudo docker built -t name .
+Sudo docker run -dp 3000:3000 name
+	-d → detached (Hintergrund)
+	-p → Portmapping extern (Browser) : intern (docker)
+
+../src/static/js/app.js
+	No items yet geändert
+
+Englisches Docker: sengineapp
+Deutsches docker: sengineappdeutsch
+Deutsches docker mit nodemon: sengineappdeutschnodemon
+
+Volume: sevol
+
+docker run -dp 3000:3000 –name PraktikumEnglisch sengineapp
+
+docker run -dp 3001:3000 –name PraktikumDeutsch –mount type=volume,src=sevol,target=/etc/todos sengineappdeutsch
+
+docker run dp 3000:3000 w /app –mount type=bind,src=”$(pwd)”,target=/app node:18-alpine sh -c “yarn install && yarn run dev”

@@ -1,0 +1,49 @@
+Wichtige Prinzipien für Software Engineering
+    Notwendigkeit
+    Dokumentation
+
+Softwareentwicklungsprozess
+    Wasserfallmodell
+        Sequentieller Entwicklungsprozess mit festen Phasen
+    Spiralmodell
+    Agile Methoden
+        Kanban
+        Scrum
+
+Projektmanagement
+    Kreis: Evaluate - Design - Code - Analyse
+
+Projekt in Bestandteile zerlegen und Use-Cases definieren.
+
+Projektsteuerung
+    Strukturplan
+        Was
+    Ablaufplan
+        Was & Wann
+    Terminplan
+        Wann & Wer
+    Risikoplan
+        Welche & Gegenmaßnahmen
+    Kostenplan
+    Kapazitätsplan
+    Qualitätsplan
+        Wie & Wann
+    Projektgesamtkosten
+
+Statusmeetings mit Zeitstrahl zur Verdeutlichung über Status Projekt und Abschnitte
+
+Proof Of Concept
+    erster SChritt bei einer Entwicklung
+    Ein bestehendes Konzept wird auf Tauglichkeit und Umsetzbarkeit geprüft.
+    Erstellung des POC erfolgt iterativ in ständiger Diskussion mit den Stakeholdern.
+    Anders als beim Prototyp ist keine Funktion simuliert.
+    Konzentration auf Machbarkeit und Zielereichbarkeit (technisch und finanziel)
+Prototyp
+    Prototypentwicklung setzt eine erste Rohversion des Produkts um.
+    Finanzielle Aspekte sind bereits ausreichend geklärt.
+    ZieL: Funktionen demonstrieren und Feedback einholen, um die Erwartungen der Nutzer zu prüfen.
+    Deckt blinde Flecken in der Use Case Definition auf.
+Minimal Viable Product
+    Repräsentiert die Umsetzung des Projekts mit allen wesentlichen Merkmalen.
+    Anwendungen durch den Nutzer ist bereits möglich.
+

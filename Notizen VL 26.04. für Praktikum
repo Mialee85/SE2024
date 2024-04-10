@@ -1,0 +1,37 @@
+CI/CD Continuous Integration / Deployment
+
+GitFlow 
+    - langlebiger Branch: main
+    - weiterer langlebiger Branch: develop (Zum arbeiten)
+    - kurzlebiger Branch von develop: feature (meist mit issue#)
+
+GitLab-Flow
+    - main
+    - feature branches
+    - staging branch ( als zwischenkontrolle)
+    - production branch (Releases)
+
+Merge Request bei Branch-Erstellung
+
+git status
+git fetch --verbose
+
+Gitlab runner
+    gitlab-runner register
+        gitlab.hsrw.eu
+        Token
+        shell
+    
+    issue - branch und merge erstellen
+    .gitlab-ci.yml erstellen
+    CI/CD -> Editor
+        create pipeline
+            commit
+    
+.gitlab-ci.yml
+    stages beschreibt die jobs
+
+    job name frei
+        stage: <stagename>
+        script: Shellscript und Konsolenausgaben
+        
