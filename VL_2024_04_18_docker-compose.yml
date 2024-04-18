@@ -1,5 +1,19 @@
-version: '3.8'
+version: '3.8' # Versionsnummer muss vorhanden sein.
 
-services:
+services: # Services zuerst
   db:
-    image: mariadb
+    image: mariadb:latest
+    continer_name: mariadb #name für container
+    enviroment: 
+      - MYSQL_ROOT_PASSWORD=12345 #MariaDB versteht normalerweise MYSQL Befehle
+      - MYSQL_DATABASE=test
+
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    ports:
+      - 8000:80 #Portverbindung Extern:Intern(PMA)
+    enviroment:
+      - PMA_HOST=db #name vom service
+    depends_on:
+      - db #name vom service
