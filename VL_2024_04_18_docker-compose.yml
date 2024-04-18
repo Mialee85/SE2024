@@ -6,7 +6,9 @@ services: # Services zuerst
     continer_name: mariadb #name für container
     enviroment: 
       - MYSQL_ROOT_PASSWORD=12345 #MariaDB versteht normalerweise MYSQL Befehle
-      - MYSQL_DATABASE=test
+      - MYSQL_DATABASE=test #Legt zusätzliche Datenbank an
+    volumes:
+      - ./volumes/mariadb:/var/lib/mysql #Schreiben Extern:Intern(Docker) - Externer Pfad muss angelegt und verfügbar sein.
 
   phpmyadmin:
     image: phpmyadmin:latest
